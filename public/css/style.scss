@@ -1,0 +1,384 @@
+$colorb:    black;
+$colorw:    white;
+$colorg:    #314743;
+$colorgray: rgb(73, 73, 73);
+
+body{
+    margin: 0px;
+    background-color: $colorw;
+
+        .nav-bar {
+        overflow: hidden;
+        background-color: $colorw;
+        position: fixed; 
+        top: 0;
+        width: 100%; /* Full width */
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* vertical */
+        align-items: center; /* horizontal */
+        
+        }
+    
+        .left  {
+            margin-top: 40px;
+            margin-left: 50px;
+            background-image: url(../images/logo.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 80px;
+            height: 80px;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .right a {
+            font-size: 18px;
+            font-family: 'Archivo Black', sans-serif;
+            width: 200px;
+            padding: 40px;
+            color: $colorg;
+            text-decoration: none;
+            align-items: left;
+
+            &:hover{
+                background-color: $colorg;
+                color: $colorw;
+            }
+        }
+
+        .right img{
+            margin: 0px auto;
+            width: 20px;
+            height: 20px;
+
+        }
+    
+
+    &.accueil{
+
+        h2 {
+            color: $colorg;
+            margin: 0px;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        .section-promo {
+            font-family: 'Archivo Black', sans-serif;
+            height: 60%;
+            display: flex;
+        }
+
+        .section-left {
+            padding: 50px;
+            width: 20%;
+            flex-direction: row;
+            justify-content: left; /* vertical */
+            align-items: left; /* horizontal */
+        }
+
+        .a-bouton {
+            padding: 20px;
+            width: 100px;
+            background-color: $colorg;
+            color: $colorw;
+
+            &:hover{
+                color: $colorb;
+                border: 4px $colorb;
+                background-color: $colorb;
+            }
+        }
+    
+        .a-bouton a {
+            text-decoration: none;
+            color: $colorw;
+        }
+        .section-rigth {
+            width: 80%;
+            background-image: url("../images/promo_image.png");
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: right; 
+
+            & p{
+                color: $colorw;
+            }
+
+        }
+
+        .section-video{
+            margin: 0px;            
+            background-color: $colorg;
+            padding: 50px;
+            font-family: 'Archivo Black', sans-serif;
+            display: flex;
+            height: 700px;
+
+        }
+
+        .section-video h1, h4{
+            color: $colorw;
+        }
+        .section-video h2{
+            color: $colorw;
+        }
+        .section-video p {
+            color: $colorw;
+            padding-right: 50px;
+        }
+        
+        .section-v-l {
+            width: 30%;
+
+            justify-content: center;
+            align-items: center;
+        }
+        .section-v-r {
+            width: 70%;
+            display: flex;
+        }
+        .video1,
+        .video2,
+        .video3 {
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+        }
+        .video1 {
+            background-image: url("../images/1.jpg");  
+        }
+        .video2 {
+            background-image: url("../images/2.jpg");
+        }
+        .video3 {
+            background-image: url("../images/3.jpg");  
+        }
+        .section-commanditaires{
+            font-family: 'Archivo Black', sans-serif;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 30px;
+
+        }
+    
+        .logo1, 
+        .logo2,
+        .logo3{ 
+            width: 200px;
+            height: 100px;
+            padding-left: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo1{
+            background-image: url("../images/logos/assurance.svg");  
+        }
+
+        .logo2 { 
+            background-image: url("../images/logos/banque.svg");    
+        }
+        
+        .logo3 { 
+            background-image: url("../images/logos/reno.svg");  
+        
+        }
+
+        .infolettre {
+            font-family: 'Archivo Black', sans-serif;
+            background-color: $colorg;
+            color: $colorw;
+            height: 250px;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-left,
+        .info-center {
+            padding: 50px;
+            width: 500px;
+        }
+
+
+        .info-right{
+            margin-left: 30px;
+            width: 400px;
+            height: 200px;
+            background-image: url("../images/courrier.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+        &.entreprise{
+
+        .section-promo {
+            padding-top: 25px;
+            font-family: 'Archivo Black', sans-serif;
+            height: 60%;
+            display: flex;
+
+            & h1, h2{
+                margin: 0px;
+                color: $colorgray;
+            }
+            & p{
+                font-family: 'Roboto', sans-serif;
+
+            }
+        }
+
+        .section-right {
+            padding: 50px;
+            width: 50%;
+            flex-direction: row;
+            justify-content: left; /* vertical */
+            align-items: left; /* horizontal */
+        }
+
+        .a-bouton {
+            padding: 20px;
+            width: 100px;
+            background-color: $colorg;
+            color: $colorw;
+
+            &:hover{
+                color: $colorb;
+                border: 4px $colorb;
+                background-color: $colorb;
+            }
+        }
+    
+        .a-bouton a {
+            text-decoration: none;
+            color: $colorw;
+        }
+
+        .section-left {
+            width: 50%;
+            background-image: url("../images/cam.jpg");
+            background-size: cover;
+            background-position: right;
+            justify-content: right;
+            align-items: right; 
+
+            & p{
+                color: $colorw;
+                font-family: 'Roboto', sans-serif;
+
+            }
+        }
+
+
+
+        .section-video{
+            margin: 0px;            
+            background-color: $colorw;
+            padding: 50px;
+            font-family: 'Archivo Black', sans-serif;
+            display: flex;
+            height: 700px;
+
+        }
+
+        .section-video h1, h4{
+            color: $colorb;
+        }
+        .section-video h2{
+            color: $colorgray;
+        }
+        .section-video p {
+            font-family: 'Roboto', sans-serif;
+            color: $colorb;
+            padding-right: 50px;
+        }
+        
+        .section-v-l {
+            width: 30%;
+
+            justify-content: center;
+            align-items: center;
+        }
+        .section-v-r {
+            width: 70%;
+            display: flex;
+        }
+        .video1{
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 100%;
+        }
+        .video1 {
+            background-image: url("../images/teams.jpg");  
+        
+        }
+        .section-commanditaires{
+            font-family: 'Archivo Black', sans-serif;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 30px;
+
+        }
+    
+    }
+    
+    .footer{
+        display: flex;
+        padding-left: 50px;
+        margin: 0px;
+        background-color: $colorw;
+        justify-content: center;
+        align-items: center;    
+        
+        & h3{
+            font-family: 'Archivo Black', sans-serif;
+            box-shadow: $colorg;
+            margin: 0px;
+        }
+
+        & a {
+            color: $colorg;
+        }
+
+        img{
+            display: flex;
+            align-items: right;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        & .copyright{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+
