@@ -7,6 +7,25 @@ class Utilisateurs extends BaseModel
 
     protected $table = "utilisateurs";
 
+    public function creer($prenom, $nom, $courriel, $mot_de_passe = null)
+    {
+        $sql = "
+            INSERT INTO $this->table (prenom, nom, courriel, mot_de_passe)
+            VALUES (:prenom, :nom, :courriel, :mot_de_passe);
+        ";
+
+        $stmt = $this->pdo()->prepare($sql);
+
+        $success = $stmt->execute([
+            ":prenom" => $prenom,
+            ":nom" => $nom,
+            ":courriel" => $courriel,
+            ":mot_de_passe" => $mot_de_passe,
+        ]);
+
+        return $success;
+    }
+
     //Validation connexion utilisateur
     
     public function verifierConnexion($courriel, $mdp)
