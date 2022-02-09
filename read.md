@@ -25,9 +25,8 @@
 Ajout contenue équipe puisse également ajouter du contenu.
 
 ## Donnees
-accs 
+accès
 - admin
-- adminfull 
 
 #### utilisateurs
     - nom
@@ -36,9 +35,11 @@ accs
     - mot_de_passe
 
 #### publications
+    - 
     - titre
     - description
     - image
     - video
     - date_publication
 
+#### Abonnees 
