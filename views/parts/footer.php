@@ -2,20 +2,28 @@
         <div class="footer">
             <div class="left-f">
                     <div class="about">
-                        <h2>Nous joindre</h2>
-                        <p>☎    514-778-2266</p>
-                        <a href="#"> Rencontrez l'équipe sur place</a>
+                        <h2>Contact</h2>
+                        <p>514-778-2266</p>
+                        <P>7788 boulevard des Seigneurs, Québec</P>
+                        <P></P>
                     </div>
             </div>
-            <div class="right-f">
-                    <div class=" social">
-                        <a href="#"><img src="<?=BASE?>/public/images/facebook.png" alt=""></a>
-                        <a href="#"><img src="<?=BASE?>/public/images/linkedin.png" alt=""></a>
-                    </div>
+            <div class="info-right">
+                        <p>ABONNEZ-VOUS À NOTRE INFOLETTRE</p>
+                        <form action="abonnees" method="POST">
+                        <input type="email" name="email" placeholder="Courriel">
+                        <input type="submit"name="submit" value="Envoyer">
+                        </form>
+                        </div>
+                        <div class="logo1"></div>
+                        <div class="logo2"></div>
+                        <div class="logo3"></div>
+          
                 </div>
+                
                 </div>
-                <div class="copyright">
-                    <p class="copyright">Cinema Fait Maison © 2022</p>
-                </div>
+
+                    <!-- <p class="copyright">Cinema Fait Maison © 2022</p> -->
+            
         </div>
 </footer>

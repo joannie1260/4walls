@@ -16,7 +16,7 @@
                 <div class="creation-publication">
                         <form action="publication/creation_submit" method="post" enctype="multipart/form-data">
                         <h1>Modification publication</h1>
-                            
+                        <form action="publication/modifier_submit">
                         <label>
                                 <span>Épisode</span>
                                 <input type="text" name="episode" value="<?=$post['episode']?>">
@@ -27,7 +27,7 @@
                             </label>
                             <label>
                                 <span>description</span>
-                                <input type="text" name="description" id=""value="<?=$post['description']?>">
+=                                <input type="text" name="description" id=""value="<?=$post['description']?>">
                                 </select>
                             </label>
                             <label>
@@ -40,12 +40,12 @@
                             </label>
                             <label>
                                 <span>Duree</span>
-                                <input type="text" name="duree" Placeholder="ex : 8mins"id="">
+                                <input type="text" name="duree" Placeholder="ex : 8mins">
                                 </select>
                             </label>
                     
                             <div>
-                                <input type="submit" name="submit" value="Créer la publication">
+                                <input type="submit" name="submit" value="Modifier la publication">
                             </div>
                         
                         </form>

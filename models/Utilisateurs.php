@@ -64,5 +64,23 @@ class Utilisateurs extends BaseModel
     }
 
 
+    public function supprimer($prenom, $nom, $courriel, $mot_de_passe = null)
+    {
+        $sql = "
+            DELETE INTO $this->table (prenom, nom, courriel, mot_de_passe)
+            VALUES (:prenom, :nom, :courriel, :mot_de_passe);
+        ";
+
+        $stmt = $this->pdo()->prepare($sql);
+
+        $success = $stmt->execute([
+            ":prenom" => $prenom,
+            ":nom" => $nom,
+            ":courriel" => $courriel,
+            ":mot_de_passe" => $mot_de_passe,
+        ]);
+
+        return $success;
+    }
     
 }

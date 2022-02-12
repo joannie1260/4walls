@@ -7,9 +7,11 @@
         <title>Connexion</title>
         <?php include "parts/head.php"?>
     </head>
-    <body class="connexion">
-        <h1 class="logo">Sport-O-Max</h1>
-        <h2>Connexion</h2>
+<body class="connexion">
+        <div class="container">
+        <div class="logo"></div>
+        <h1>Cinéma Fait Maison</h1>
+        <h4>Connexion Administration</h4>
         <?php if (isset($_GET['erreur'])) {?>
             <div class="erreur">
                 <p>Les informations de connexion fournies sont inexactes.</p>
@@ -21,9 +23,9 @@
                 <input type="password" name="mot_de_passe" placeholder="Mot de passe">
                 <input type="submit" name="submit" value="Se connecter">
             </form>
+            <a href="./">Retour a l'accueil</a>
+
         </div>
-        <div class="lien">
-        <a href="./">Retour a l'accueil</a>
         </div>
     </body>
 </html>

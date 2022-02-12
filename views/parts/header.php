@@ -4,9 +4,10 @@
                 <div class="right">
                         <a href="accueil">LA SÉRIE</a>
                         <a href="entreprise">CINEMA FAIT MAISON</a>
-                        <a href="#"><img src="<?=BASE?>/public/images/facebook.png" alt=""></a>
-                        <a href="#"><img src="<?=BASE?>/public/images/linkedin.png" alt=""></a>
-
+                            <a href="https://fr-ca.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </div>
+                </div>
+                
         </div>
 </header>
