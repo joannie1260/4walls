@@ -55,7 +55,7 @@ class BaseModel
         if ($this::$PDO == null) {
             require "config/database.php";
 
-            $this::$PDO = new PDO("mysql:host=$server;dbname=$database", $username, $password);
+            $this::$PDO = new PDO("mysql:host=$server;dbname=$database;charset=utf8mb4", $username, $password);
 
             // Affichage des erreurs dans la page
             $this::$PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
